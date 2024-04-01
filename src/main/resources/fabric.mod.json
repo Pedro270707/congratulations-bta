@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "congratulations",
+  "version": "1.0.0",
+
+  "name": "Congratulations",
+  "description": "Adds a cool text to the end of the game",
+  "authors": [
+    "Pedro Ricardo"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"net.pedroricardo.congratulations.Congratulations"
+    ],
+		"beforeGameStart": [
+			"net.pedroricardo.congratulations.Congratulations"
+		],
+		"afterGameStart": [
+			"net.pedroricardo.congratulations.Congratulations"
+		],
+		"recipesReady": [
+			"net.pedroricardo.congratulations.Congratulations"
+		]
+	},
+  "mixins": [
+		"congratulations.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "~7.1-beta.2",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
